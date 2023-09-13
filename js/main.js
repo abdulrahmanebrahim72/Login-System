@@ -71,7 +71,7 @@ function signin(){
         if(signinEmail.value.toLowerCase() == allUsers[i].uEmail.toLowerCase() && signinPassword.value == allUsers[i].uPassword){
             let Name = allUsers[i].uName;
             sessionStorage.setItem("userName" , Name);
-            location.replace("../home.html");
+            location.replace("./home.html");
             break;
         }
         else{
